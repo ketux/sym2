@@ -1,0 +1,60 @@
+{% extends '::base.html.twig' %}
+
+{% block title %} kas jus? Blogas{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ absolute_url(asset('css/style.css')) }}"> 
+{% endblock %}
+
+
+{% block header %}	
+				{{ include("::header.html.twig") }}
+{% endblock %}
+
+
+{% block body %}
+					{{ include("::submenu.html.twig") }}
+<div class="fix wrap content_wrapper">
+				<div class="fix content">
+					<div class="fix main_content floatleft">
+						<div class="fix single_content_wrapper">
+						
+						<div class="fix single_content floatleft">
+							<img src="images/home_featured.png" alt=""/>
+							<div class="fix single_content_info">
+								<h1>Ullamcorper Mollis Pellentesque</h1>
+								<p class="author">By Admin In Photography,Wine,Food</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec 
+								id elit non mi porta gravida at eget metus. Nullam id dolor id ultricies .</p>		
+							</div>
+						</div>
+						</div>
+						<div class="pagination fix">
+							<a href="">1</a>
+							<a href="">1</a>
+							<a href="">1</a>
+							<a href="">1</a>
+							<a href="">1</a>
+							<a href="">1</a>
+						</div>
+					</div>
+									{{ include("::sidebar.html.twig") }}
+				</div>
+			</div>			
+		</div>
+{% endblock %}
+
+
+{% block footer%} 
+	{{ include("::footer.html.twig") }}
+{% endblock %}
+
+{% block javascripts %}	
+	<script type="text/javascript" src="{{ asset('js/plugin.js') }}">
+	</script>
+{% endblock %}
+
+
+
+
+

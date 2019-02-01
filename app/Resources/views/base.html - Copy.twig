@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Sveiki!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+		{% block header %}
+					<p>Base</p>
+
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#">Namai</a></li>
+						<li><a href="#">Laukai</a></li>
+						<li><a href="#">Pievos</a></li>
+
+					</ul>
+				</nav>
+			</header>
+		{% endblock %}
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

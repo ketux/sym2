@@ -1,0 +1,15 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h2 class="page header">Home Page</h2>
+ <table class="table table-striped">
+    
+  
+  </table>
+  
+  <a href="{{ path('app_blog_index_route') }}"> Relative. Blog</a>
+<br>
+<a href="{{ url('app_blog_index_route') }}"> Absolute.  Blog</a>
+
+  {% endblock %}

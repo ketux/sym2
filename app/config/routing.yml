@@ -1,0 +1,9 @@
+blog:
+    resource: "@BlogBundle/Controller/"
+    type:     annotation
+    prefix:   /	
+home:
+    resource: "@HomeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
